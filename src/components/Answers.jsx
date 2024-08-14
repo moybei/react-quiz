@@ -21,8 +21,8 @@ export default function Answers({answers, selectedAnswer, answerState, onSelect}
         }
 
         if (
-          answerState === "Correct" ||
-          (answerState === "Wrong" && isSelected)
+          (answerState === "Correct" ||
+          answerState === "Wrong") && isSelected
         ) {
           cssClasses = answerState.toLowerCase();
         }
